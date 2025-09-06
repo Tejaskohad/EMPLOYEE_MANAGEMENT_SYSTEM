@@ -1,0 +1,31 @@
+-- DATA INTO DEPARTMENTS
+INSERT INTO DEPARTMENTS (DEPT_NAME,LOCATION)
+VALUES ('IT','NEW YORK') ,
+	   ('CS','LONDON') ,
+       ('ME','DELHI') ,
+       ('HR','MUMBAI') ; 
+
+-- DATA INTO ROLES
+INSERT INTO ROLES (ROLES)
+VALUES ('SOFTWARE ENGINEER') , 
+	   ('DATA ANALYST') ,
+       ('WEB DEVELOPER') ,
+       ('HR MANAGER') ;
+       
+-- DATA INTO EMPLOYEES
+INSERT INTO EMPLOYEES (EMP_NAME,DEPT_ID,ROLE_ID,EMAIL,HIREDATE,MGR_ID)
+VALUES ('SURAJ WANI',2,3,'suraj@gmail.com','2022-08-12',3),
+	   ('NIKHIL BHUTE',3,1,'nikhil@gmail.com','2023-06-16',4),
+       ('ASHISH UMATE',4,2,'ashish@gmail.com','2024-12-30',2),
+       ('TEJAS PATIL',1,4,'tejas@gmail.com','2023-07-28',5),
+       ('SAHIL KADU',2,1,'sahil@gmail.com','2021-11-23',1) ; 
+       
+-- DATA INTO SALARY
+INSERT INTO SALARY (EMP_ID,BASE_SALARY,BONUS,EFFECTIVE_DATE)
+VALUES (5,23000,1000,CURDATE()) , 
+	   (3,19000,700,CURDATE()) ,
+       (4,25000,1000,CURDATE()) ,
+	   (1,35000,2500,CURDATE()) ,
+       (2,33000,2000,CURDATE()) ;
+       
+       
